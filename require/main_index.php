@@ -8,5 +8,5 @@ if (isset($_GET["id"])) {
     // echo $_GET["id"] . "👀👀👀";
     $id = $_GET["id"];
     supprimer($connect, $id);
-    header("location:../showAlertDelete.php");
+    header("location:registre-app.great-site.net/showAlertDelete.php");
 }

@@ -2,7 +2,7 @@
 function connexion()
 {
     try {
-        $connect_pdo = new PDO("mysql:host=localhost;dbname=registre_entreprise", "root", "");
+        $connect_pdo = new PDO("mysql:host= sql313.epizy.com ;dbname=epiz_33813667_registre_entreprise", "epiz_33813667", "rLdwD2wcUK");
         if (isset($connect_pdo)) {
             // echo "connexion OK";
         } else {
