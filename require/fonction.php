@@ -98,7 +98,7 @@ function afficherDetails($entreprise)
 function modifier($connect, $nom, $activite, $siret, $date, $id)
 {
     try {
-        $updateSQL = "update ENTREPRISE set raison_social =  '$nom', activite = '$activite', siret = '$siret', date_creation = '$date' where id = '$id'";
+        $updateSQL = "update entreprise set raison_social =  '$nom', activite = '$activite', siret = '$siret', date_creation = '$date' where id = '$id'";
         $update = $connect->prepare($updateSQL);
         $update->execute();
     } catch (Exception $e) {
